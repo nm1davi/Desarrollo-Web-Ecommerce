@@ -15,4 +15,4 @@
 15-Agregue imagenes con texto en herrajes, ferreteria y maquinarias (con cards)
 16-Utilice css para acentuar palabras importantes(negrita y subrayados)
 17-Hice responsive mi pagina con media queries. (La probe en los distintos dispositvos)
-18-Mi pagina esta logueada en netlify : ferreteriadavi.netlify.app (ese es el nombre)
+18-Mi pagina esta logueada en netlify : https://davihnos.netlify.app (ese es el nombre)
