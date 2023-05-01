@@ -1,0 +1,19 @@
+@mixin caracteristicas(
+$display,
+$gridcolums,
+$gridrows,
+$gaps, 
+$gridautoflow,
+$gridtemplateareas, 
+$gridarea,
+$backgroundcolor)
+{
+    display: $display;
+    grid-template-columns: $gridcolums;
+    grid-template-rows: $gridrows;
+    gap: $gaps;
+    grid-auto-flow: $gridautoflow;
+    grid-template-areas: $gridtemplateareas;
+    grid-area: $gridarea;
+    background-color: $backgroundcolor;
+}

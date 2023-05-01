@@ -1,0 +1,606 @@
+@charset "UTF-8";
+/* Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+/* color de fondo hover */
+/* color de fondo */
+/* color de fuente */
+/* BODY */
+* {
+  margin: 1px;
+  padding: 1px;
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #fdfdfd, #cfcece, #a3a1a1, #787775, #4f4f4d);
+}
+
+.importante {
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(4, 4, 68);
+}
+
+/* HEADER */
+.header {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  padding: 0.625em auto;
+  background-color: #34495e;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1.25em;
+  background: #2c3e50; /* color de fondo */
+  color: #fff; /* color de fuente */
+  border: 0.125em solid #2c3e50; /* tamaño y color de borde */
+  padding: 0.375em 0.9375em;
+  border-radius: 0.3125em; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  border-color: #000000 #000000 #000000 #000000;
+  border-width: 0.05em 0.05em 0.05em 0.05em;
+  border-style: ridge ridge ridge ridge;
+}
+
+.contenedorLogo {
+  display: flex;
+  justify-content: center;
+  height: 12.5em;
+  margin-left: 4.375em;
+  margin-right: 4.375em;
+  background-color: #34495e;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0em 0.125em;
+  grid-auto-flow: row;
+  grid-template-areas: "imagenMaquinaria textoAmoladora" "textoHerrajes imagenHerrajes" "imagenFerreteria textoFerreteria";
+}
+
+/* Maquinarias */
+.imagenMaquinaria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4fr 0.1fr 1fr;
+  gap: 0em 0em;
+  grid-auto-flow: row;
+  grid-template-areas: "imgMaquinaria imgMaquinaria imgMaquinaria" "botonMaquinaria botonMaquinaria botonMaquinaria" "botonMaquinaria botonMaquinaria botonMaquinaria";
+  grid-area: imagenMaquinaria;
+  background-color: #34495e;
+}
+.imagenMaquinaria .imgMaquinaria {
+  grid-area: imgMaquinaria;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 1.25em auto;
+}
+.imagenMaquinaria .botonMaquinaria {
+  grid-area: botonMaquinaria;
+  font-weight: bold;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3.75em;
+  background: #2c3e50; /* color de fondo */
+  color: white; /* color de fuente */
+  border: 0.125em solid #2c3e50; /* tamaño y color de borde */
+  padding: 0.375em 0.9375em;
+  border-radius: 0.3125em; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  border-color: #000000 #000000 #000000 #000000;
+  border-width: 0.05em 0.05em 0.05em 0.05em;
+  border-style: ridge ridge ridge ridge;
+}
+.imagenMaquinaria .botonMaquinaria:hover {
+  color: white; /* color de fuente hover */
+}
+.imagenMaquinaria .botonMaquinaria::after {
+  content: "";
+  background: #262c31; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 1em 1.25em;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.imagenMaquinaria .botonMaquinaria:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(45deg) scale(1, 1);
+}
+
+.textoAmoladora {
+  grid-area: textoAmoladora;
+  background-color: #34495e;
+}
+
+/* Herrajes */
+.imagenHerrajes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.4fr 0.6fr;
+  gap: 0em 0em;
+  grid-auto-flow: row;
+  grid-template-areas: "imgHerrajes imgHerrajes imgHerrajes" "imgHerrajes imgHerrajes imgHerrajes" "botonHerrajes botonHerrajes botonHerrajes";
+  grid-area: imagenHerrajes;
+  background-color: #34495e;
+}
+.imagenHerrajes .imgHerrajes {
+  grid-area: imgHerrajes;
+  display: flex;
+  margin: 1.25em auto;
+}
+.imagenHerrajes .botonHerrajes {
+  grid-area: botonHerrajes;
+  font-weight: bold;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3.75em;
+  background: #2c3e50; /* color de fondo */
+  color: white; /* color de fuente */
+  border: 0.125em solid #2c3e50; /* tamaño y color de borde */
+  padding: 0.375em 0.9375em;
+  border-radius: 0.3125em; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  border-color: #000000 #000000 #000000 #000000;
+  border-width: 0.05em 0.05em 0.05em 0.05em;
+  border-style: ridge ridge ridge ridge;
+}
+.imagenHerrajes .botonHerrajes:hover {
+  color: white; /* color de fuente hover */
+}
+.imagenHerrajes .botonHerrajes::after {
+  content: "";
+  background: #262c31; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 1em 1.25em;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.imagenHerrajes .botonHerrajes:hover::after {
+  transition: skewX(45deg) scale(1, 1);
+  transform: all 0.3s ease-out;
+}
+
+.textoHerrajes {
+  grid-area: textoHerrajes;
+  background-color: #34495e;
+}
+
+/* Ferretería */
+.imagenFerreteria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.4fr 0.6fr;
+  gap: 0em 0em;
+  grid-auto-flow: row;
+  grid-template-areas: "imgFerreteria imgFerreteria imgFerreteria" "imgFerreteria imgFerreteria imgFerreteria" "botonFerreteria botonFerreteria botonFerreteria";
+  grid-area: imagenFerreteria;
+  background-color: #34495e;
+}
+.imagenFerreteria .imgFerreteria {
+  grid-area: imgFerreteria;
+  margin: 1.25em auto;
+}
+.imagenFerreteria .botonFerreteria {
+  grid-area: botonFerreteria;
+  font-weight: bold;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3.75em;
+  background: #2c3e50; /* color de fondo */
+  color: white; /* color de fuente */
+  border: 0.125em solid #2c3e50; /* tamaño y color de borde */
+  padding: 0.375em 0.9375em;
+  border-radius: 0.3125em; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  border-color: #000000 #000000 #000000 #000000;
+  border-width: 0.05em 0.05em 0.05em 0.05em;
+  border-style: ridge ridge ridge ridge;
+}
+.imagenFerreteria .botonFerreteria:hover {
+  color: white; /* color de fuente hover */
+}
+.imagenFerreteria .botonFerreteria::after {
+  content: "";
+  background: #262c31; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 1em 1.25em;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.imagenFerreteria .botonFerreteria:hover::after {
+  transition: skewX(45deg) scale(1, 1);
+  transform: all 0.3s ease-out;
+}
+
+.textoFerreteria {
+  grid-area: textoFerreteria;
+  background-color: #34495e;
+}
+
+/* Títulos */
+.tituloH1 {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.tituloH2 {
+  color: white;
+  font-size: 1.875em;
+}
+
+/* Páginas nosotros y contacto */
+.containerContacto {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 2px;
+  grid-auto-flow: row;
+  grid-template-areas: "imagenMapa formulario";
+}
+
+.imagenMapa {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 1.4fr;
+  gap: 0em 0em;
+  grid-auto-flow: row;
+  grid-template-areas: "textoContacto" "mapa";
+  grid-area: imagenMapa;
+}
+
+.textoContacto {
+  grid-area: textoContacto;
+}
+
+.mapa {
+  grid-area: mapa;
+  text-align: center;
+}
+
+.formulario {
+  grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.containerNosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  grid-auto-columns: 1fr;
+  gap: 0em 0.125em;
+  grid-auto-flow: row;
+  grid-template-areas: "imagenNegocio" "textoNosotros";
+}
+
+.imagenNegocio {
+  grid-area: imagenNegocio;
+  background-image: url(../assets/img/nosotros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2.1875em;
+}
+
+.textoNosotros p {
+  grid-area: textoNosotros;
+  color: black;
+  font-size: x-large;
+  font-weight: bolder;
+  margin-left: 1.5em;
+}
+
+/* Páginas ferreteria,herrajes,maquinaria */
+.mainCards {
+  margin-right: 3.125em;
+  margin-left: 6.375em;
+  margin-top: 0.625em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgCards {
+  width: 11.25em;
+  height: 12.5em;
+  margin: 1.25em auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-body {
+  font-size: 100%;
+  font-weight: bolder;
+  color: whitesmoke;
+  background-color: rgb(49, 49, 49);
+}
+
+/* Página404 */
+.containerErorr {
+  display: grid;
+  margin-left: 1.875em;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0em 0.125em;
+  grid-auto-flow: row;
+  grid-template-areas: "imagenerror textoError";
+}
+
+.imagenerror {
+  grid-area: imagenerror;
+}
+
+.imgError {
+  width: 100%;
+}
+
+.textoError,
+h1,
+h2 {
+  grid-area: textoError;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.footer {
+  display: flex;
+  justify-content: normal;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  font-size: large;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container img {
+    max-width: 100%;
+  }
+  .contenedorLogo img {
+    width: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  a {
+    font-size: 30px;
+  }
+  .containerNosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenNegocio {
+    height: 31.25em;
+  }
+  .textoNosotros {
+    margin: 0px;
+    max-width: 100%;
+  }
+  .containerContacto {
+    display: flex;
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+  }
+  .formulario {
+    width: 100%;
+    flex-direction: column;
+  }
+  .mainHerramientas {
+    display: flex;
+    justify-content: end;
+  }
+  .containerErorr {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container img {
+    max-width: 100%;
+  }
+  .contenedorLogo img {
+    width: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  a {
+    font-size: 30px;
+  }
+  .containerNosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenNegocio {
+    height: 31.25em;
+  }
+  .textoNosotros {
+    margin: 0px;
+    max-width: 100%;
+  }
+  .containerContacto {
+    display: flex;
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+  }
+  .formulario {
+    width: 100%;
+    flex-direction: column;
+  }
+  .mainHerramientas {
+    display: flex;
+    justify-content: end;
+  }
+  .containerErorr {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container img {
+    max-width: 100%;
+  }
+  .contenedorLogo img {
+    width: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  a {
+    font-size: 30px;
+  }
+  .containerNosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenNegocio {
+    height: 31.25em;
+  }
+  .textoNosotros {
+    margin: 0px;
+    max-width: 100%;
+  }
+  .containerContacto {
+    display: flex;
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+  }
+  .formulario {
+    width: 100%;
+    flex-direction: column;
+  }
+  .mainHerramientas {
+    display: flex;
+    justify-content: end;
+  }
+  .containerErorr {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container img {
+    max-width: 100%;
+  }
+  .contenedorLogo img {
+    width: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  a {
+    font-size: 30px;
+  }
+  .containerNosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenNegocio {
+    height: 31.25em;
+  }
+  .textoNosotros {
+    margin: 0px;
+    max-width: 100%;
+  }
+  .containerContacto {
+    display: flex;
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+  }
+  .formulario {
+    width: 100%;
+    flex-direction: column;
+  }
+  .mainHerramientas {
+    display: flex;
+    justify-content: end;
+  }
+  .containerErorr {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}/*# sourceMappingURL=style.css.map */

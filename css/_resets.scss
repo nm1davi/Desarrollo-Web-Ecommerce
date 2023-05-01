@@ -1,0 +1,21 @@
+@import "variables.scss";
+/* BODY */
+* {
+    margin: $margin-init;
+    padding: $padding-init;
+    font-family: $font-family;
+    box-sizing: $box-sizing;
+}
+  a {
+    text-decoration: $text-decoration-none;
+    color: $color-whitesmoke;
+  }
+  body {
+    background-image:$background-image-body;
+}
+.importante{
+  text-decoration: $text-decoration-underline;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-import;
+  color: $color-import
+}

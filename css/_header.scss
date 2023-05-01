@@ -1,0 +1,32 @@
+
+/* HEADER */
+.header {
+    margin-left: $margin-left-header;
+    margin-right: $margin-right-header;
+    padding: $padding-header;
+    background-color: $background-color-primario;
+  }
+  .nav-link {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-nav;
+    background: $background-secundario; /* color de fondo */
+    color: $color-fuente-boton; /* color de fuente */
+    border: map-get($border,border-boton); /* tamaño y color de borde */
+    padding: $padding-boton;
+    border-radius: map-get($border,border-radius-boton); /* redondear bordes */
+    position: $position-relative;
+    z-index: $z-index;
+    overflow: $overflow-hiden;
+    display: $display-flex;
+    border-color: map-get($border,border-color);
+    border-width: map-get($border,border-width);
+    border-style: map-get($border,border-style);
+  }
+  .contenedorLogo {
+    display: $display-flex;
+    justify-content: $center;
+    height: $height-logo;
+    margin-left: $margin-left-logo;
+    margin-right: $margin-right-logo;
+    background-color: $background-color-primario;
+  }

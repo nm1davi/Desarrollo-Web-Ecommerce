@@ -1,0 +1,12 @@
+@import "mixins.scss";
+.footer {
+  display: $display-flex;
+  justify-content: $justify-content-normal;
+  flex-direction: $flex-direction-column;
+  flex-wrap: $flex-wrap;
+  align-content: $center;
+  align-items: $center;
+  height: $widht-100;
+  color: $color-white;
+  font-size: $font-size-large;
+}

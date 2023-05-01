@@ -1,0 +1,209 @@
+@media (max-width: 1200px) {
+    .container{
+      display: $display-flex;
+      flex-direction: $flex-direction-column;
+      flex-wrap: $flex-wrap;
+    }
+    .container img{
+      max-width: $widht-100;
+    }
+    .contenedorLogo img{
+      width: $width-200px;
+      object-fit: $object-fit-contain;
+    }
+    a{
+      font-size: $font-size-30px;
+    }
+    .containerNosotros{
+      display: $display-flex;
+      flex-direction: $flex-direction-column;
+    }
+    .imagenNegocio{
+      height: $height-3125;
+    }
+    .textoNosotros{
+      margin: $margin0px;
+      max-width: $widht-100;
+    }
+  
+    .containerContacto {
+      display: $display-flex;
+      flex-direction: $flex-direction-column;
+    }
+    iframe{
+      width: $widht-100;
+    }
+    
+    .formulario{
+      width: $widht-100;
+      flex-direction: $flex-direction-column;
+    }
+    .mainHerramientas{
+      display: $display-flex;
+      justify-content: $justify-content-end;
+    }
+  
+    .containerErorr{
+      display: $display-flex;
+      flex-direction: $flex-direction-column;
+      justify-content: $justify-content-end;
+    }
+  }
+  
+  @media (max-width: 992px) { 
+  
+    .container{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        flex-wrap: $flex-wrap;
+      }
+      .container img{
+        max-width: $widht-100;
+      }
+      .contenedorLogo img{
+        width: $width-200px;
+        object-fit: $object-fit-contain;
+      }
+      a{
+        font-size: $font-size-30px;
+      }
+      .containerNosotros{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+      }
+      .imagenNegocio{
+        height: $height-3125;
+      }
+      .textoNosotros{
+        margin: $margin0px;
+        max-width: $widht-100;
+      }
+    
+      .containerContacto {
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+      }
+      iframe{
+        width: $widht-100;
+      }
+      
+      .formulario{
+        width: $widht-100;
+        flex-direction: $flex-direction-column;
+      }
+      .mainHerramientas{
+        display: $display-flex;
+        justify-content: $justify-content-end;
+      }
+    
+      .containerErorr{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        justify-content: $justify-content-end;
+      }
+  }
+  
+  @media (max-width: 768px) { 
+    .container{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        flex-wrap: $flex-wrap;
+      }
+      .container img{
+        max-width: $widht-100;
+      }
+      .contenedorLogo img{
+        width: $width-200px;
+        object-fit: $object-fit-contain;
+      }
+      a{
+        font-size: $font-size-30px;
+      }
+      .containerNosotros{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+      }
+      .imagenNegocio{
+        height: $height-3125;
+      }
+      .textoNosotros{
+        margin: $margin0px;
+        max-width: $widht-100;
+      }
+    
+      .containerContacto {
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+      }
+      iframe{
+        width: $widht-100;
+      }
+      
+      .formulario{
+        width: $widht-100;
+        flex-direction: $flex-direction-column;
+      }
+      .mainHerramientas{
+        display: $display-flex;
+        justify-content: $justify-content-end;
+      }
+    
+      .containerErorr{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        justify-content: $justify-content-end;
+      }
+  }
+  
+  @media (max-width: 576px) { 
+    .container{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        flex-wrap: $flex-wrap;
+      }
+      .container img{
+        max-width: $widht-100;
+      }
+      .contenedorLogo img{
+        width: $width-200px;
+        object-fit: $object-fit-contain;
+      }
+      a{
+        font-size: $font-size-30px;
+      }
+      .containerNosotros{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+      }
+      .imagenNegocio{
+        height: $height-3125;
+      }
+      .textoNosotros{
+        margin: $margin0px;
+        max-width: $widht-100;
+      }
+    
+      .containerContacto {
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+      }
+      iframe{
+        width: $widht-100;
+      }
+      
+      .formulario{
+        width: $widht-100;
+        flex-direction: $flex-direction-column;
+      }
+      .mainHerramientas{
+        display: $display-flex;
+        justify-content: $justify-content-end;
+      }
+    
+      .containerErorr{
+        display: $display-flex;
+        flex-direction: $flex-direction-column;
+        justify-content: $justify-content-end;
+      }
+  }
+  

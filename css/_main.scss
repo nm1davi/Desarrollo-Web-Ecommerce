@@ -1,0 +1,332 @@
+@import "mixins.scss";
+
+.container {
+  display: $display-grid;
+  grid-template-columns: $grid-template-columns-container;
+  grid-template-rows: $grid-template-columns-1x3;
+  gap: $gap-container;
+  grid-auto-flow: $grid-auto-flow-container;
+  grid-template-areas: $grid-template-areas-container;
+}
+
+/* Maquinarias */
+.imagenMaquinaria {
+  @include caracteristicas(
+    $display-grid,
+    $grid-template-columns-1x3,
+    $grid-template-rows-maq,
+    $gap-0em,
+    $grid-auto-flow-container,
+    $grid-template-areas-maq,
+    $grid-area-maq,
+    $background-color
+  );
+  .imgMaquinaria{
+    grid-area: $grid-area-imgMaquinaria;
+    object-fit:$object-fit-contain;
+    margin: $margin-1-25-auto;
+  }
+  .botonMaquinaria {
+    grid-area: $grid-area-botonMaq;
+    font-weight: $font-weight-bold;
+    justify-content: $center;
+    flex-direction: $flex-direction-column;
+    text-align: $center;
+    font-size: $font-size-boton;
+    background: $background-secundario; /* color de fondo */
+    color: $color-white; /* color de fuente */
+    border: map-get($border,border-boton); /* tamaño y color de borde */
+    padding: $padding-boton;
+    border-radius: map-get($border,border-radius-boton); /* redondear bordes */
+    position: $position-relative;
+    z-index: $z-index;
+    overflow: $overflow-hiden;
+    display: $display-flex;
+    border-color: map-get($border,border-color);
+    border-width: map-get($border,border-width);
+    border-style: map-get($border,border-style);
+  }
+  .botonMaquinaria:hover {
+    color: $color-white; /* color de fuente hover */
+  }
+  .botonMaquinaria::after {
+    content: "";
+    background: $background-after; /* color de fondo hover */
+    position: $position-absolute;
+    z-index: $z-index-1;
+    padding: $padding-boton-after;
+    display: $display-block;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+    transform: $transform;
+    transition: $transition;
+  }
+  .botonMaquinaria:hover::after {
+    transition: $transition-after;
+    transform: $transform-after;
+  }
+  }
+  .textoAmoladora {
+    grid-area: $gridarea-textoAmoladora;
+    background-color: $background-color;
+  }
+  
+  /* Herrajes */
+  .imagenHerrajes {
+    @include caracteristicas(
+      $display-grid,
+      $grid-template-columns-1x3,
+      $grid-template-rows-imagenFerreteria,
+      $gap-0em,
+      $grid-auto-flow-container,
+      $grid-template-areas-imagenHerrajes,
+      $grid-area-imagenHerrajes,
+      $background-color
+    );
+    .imgHerrajes {
+      grid-area: $grid-areaimgHerrajes;
+      display: $display-flex;
+      margin: $margin-1-25-auto;
+    }
+      .botonHerrajes {
+        grid-area: botonHerrajes;
+      font-weight: $font-weight-bold;
+      justify-content: $center;
+      flex-direction: $flex-direction-column;
+      text-align: $center;
+      font-size: $font-size-boton;
+      background: $background-secundario; /* color de fondo */
+      color:$color-white; /* color de fuente */
+      border: map-get($border,border-boton); /* tamaño y color de borde */
+      padding: $padding-boton;
+      border-radius: map-get($border,border-radius-boton); /* redondear bordes */
+      position: $position-relative;
+      z-index: $z-index;
+      overflow: $overflow-hiden;
+      display: $display-flex;
+      border-color: map-get($border,border-color);
+      border-width: map-get($border,border-width);
+      border-style: map-get($border,border-style);
+    }
+    .botonHerrajes:hover {
+      color: $color-white; /* color de fuente hover */
+    }
+    .botonHerrajes::after {
+      content: "";
+      background: $background-after; /* color de fondo hover */
+      position: $position-absolute;
+      z-index: $z-index-1;
+      padding: $padding-boton-after;
+      display: $display-block;
+      left: $left;
+      right: $right;
+      top: $top;
+      bottom: $bottom;
+      transform: $transform;
+      transition: $transition;
+    }
+    .botonHerrajes:hover::after {
+      transition: $transform-after;
+      transform: $transition-after;
+    }
+  }
+  .textoHerrajes {
+    grid-area: $grid-area-textoHerrajes;
+    background-color: $background-color;
+  }
+  
+  /* Ferretería */
+  .imagenFerreteria {
+    @include caracteristicas(
+      $display-grid,
+      $grid-template-columns-1x3,
+      $grid-template-rows-imagenFerreteria,
+      $gap-0em,
+      $grid-auto-flow-container,
+      $grid-template-areas-Ferreteria,
+      $grid-area-imagenFerreteria,
+      $background-color
+    );
+    .imgFerreteria {
+      grid-area: $grid-area-imgFerreteria;
+      margin: $margin-1-25-auto;
+    }
+    .botonFerreteria {
+      grid-area: botonFerreteria;
+      font-weight: $font-weight-bold;
+      justify-content: $center;
+      flex-direction: $flex-direction-column;
+      text-align: $center;
+      font-size: $font-size-boton;
+      background: $background-secundario; /* color de fondo */
+      color: $color-white; /* color de fuente */
+      border: map-get($border,border-boton); /* tamaño y color de borde */
+      padding: $padding-boton;
+      border-radius: map-get($border,border-radius-boton); /* redondear bordes */
+      position: $position-relative;
+      z-index: $z-index;
+      overflow: $overflow-hiden;
+      display: $display-flex;
+      border-color: map-get($border,border-color);
+      border-width: map-get($border,border-width);
+      border-style: map-get($border,border-style);
+    }
+    .botonFerreteria:hover {
+      color: $color-white; /* color de fuente hover */
+    }
+    .botonFerreteria::after {
+      content: "";
+      background: $background-after; /* color de fondo hover */
+      position: $position-absolute;
+      z-index: $z-index-1;
+      padding: $padding-boton-after;
+      display: $display-block;
+      left: $left;
+      right: $right;
+      top: $top;
+      bottom: $bottom;
+      transform: $transform;
+      transition: $transition;
+    }
+    .botonFerreteria:hover::after {
+      transition: $transform-after;
+      transform: $transition-after;
+    }
+  }
+
+  .textoFerreteria {
+    grid-area: $grid-area-textoFerreteria;
+    background-color: $background-color;
+  }
+  
+  /* Títulos */
+  .tituloH1 {
+    text-align: $center;
+    color: $color-whitesmoke;
+    font-weight: $font-weight-bold;
+  }
+  .tituloH2 {
+    color: $color-white;
+    font-size: $font-size-titulo-h2;
+  }
+  
+  /* Páginas nosotros y contacto */
+  
+  .containerContacto {  display: $display-grid;
+    grid-template-columns: $grid-template-columns-containerContacto;
+    grid-template-rows: $fraccion1;
+    grid-auto-columns: $fraccion1;
+    grid-auto-rows: $fraccion1;
+    gap: $gap-containerContacto;
+    grid-auto-flow: $grid-auto-flow-container;
+    grid-template-areas:$grid-template-areas-containerContacto;
+  }
+  
+  .imagenMapa {  display: $display-grid;
+    grid-template-columns: $fraccion1;
+    grid-template-rows: $grid-template-rows-imagenMapa;
+    gap: $gap-0em;
+    grid-auto-flow: $grid-auto-flow-container;
+    grid-template-areas:$grid-template-areas-imagenMapa;
+    grid-area: $grid-area-imagenMapa;
+  }
+  
+  .textoContacto { grid-area:$grid-area-textoContacto; }
+  
+  .mapa { 
+    grid-area: $grid-area-mapa;
+    text-align: $center;
+  }
+  
+  .formulario { 
+    grid-area: $grid-area-formulario;
+    display: $display-flex; 
+    flex-direction: $flex-direction-column;
+    justify-content: $justify-content-end;
+  
+  }
+  .containerNosotros {
+    display: $display-grid;
+    grid-template-columns: $fraccion1;
+    grid-template-rows: $grid-template-rows-containerNosotros;
+    grid-auto-columns: $fraccion1;
+    gap: $gap-container;
+    grid-auto-flow: $grid-auto-flow-container;
+    grid-template-areas: $grid-template-areas-containerNosotros;
+  }
+  .imagenNegocio{
+    grid-area: $grid-area-imagenNegocio;
+    background-image: $background-imagenNegocio;
+    background-position:$center;
+    background-repeat: $background-repeat-imagenNegocio;
+    background-size: $background-size-imagenNegocio;
+    margin: $margin-imagenNegocio;
+  }
+  .textoNosotros p{
+    grid-area: $grid-area-textoNostoros;
+    color: $color-black;
+    font-size: $font-size-xlarge;
+    font-weight: $font-weight-bolder;
+    margin-left: $margin-left-textoNosotros;
+  }
+  
+  
+  /* Páginas ferreteria,herrajes,maquinaria */
+  .mainCards {
+    margin-right: $margin-right-cards;
+    margin-left: $margin-left-cards;
+    margin-top: $margin-top-cards;
+    display: $display-flex;
+    flex-direction: $grid-auto-flow-container;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content-space-between;
+    align-items: $center;
+  }
+  
+  .imgCards {
+    width: $width-img-cards;
+    height: $height-img-cards;
+    margin: $margin-1-25-auto;
+    object-fit:$object-fit-contain;
+  }
+  
+  .card-body {
+    font-size: $widht-100;
+    font-weight: $font-weight-bolder;
+    color: $color-whitesmoke;
+    background-color: $background-color-card-body;
+  }
+  
+  /* Página404 */
+  .containerErorr {
+    display: $display-grid;
+    margin-left: $font-size-titulo-h2;
+    grid-template-columns: $grid-template-columns-containerContacto;
+    grid-template-rows: $fraccion1;
+    grid-auto-columns: $fraccion1;
+    grid-auto-rows: $fraccion1;
+    gap: $gap-container;
+    grid-auto-flow: $grid-auto-flow-container;
+    grid-template-areas: "imagenerror textoError";
+  }
+  
+  .imagenerror {
+    grid-area: $grid-area-containerError;
+  }
+  
+  .imgError {
+    width: $widht-100;
+  }
+  
+  .textoError,
+  h1,
+  h2 {
+    grid-area: $grid-area-textoError;
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    justify-content: $center;
+    text-align: $center;
+    font-weight: $font-weight-bolder;
+  }
