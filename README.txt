@@ -1,4 +1,4 @@
-<h1>Hola</h1>
+
 # E-commerce de Ferretería 🛠️
 
 ## Descripción
